@@ -15,3 +15,4 @@ for run test in debug mode..
 -npx playwright test --debug
 
 Environment Variable is used. It is a secret with key APP_URL.
+APP_URL=https://fe-delivery.tallinn-learning.ee/signin
