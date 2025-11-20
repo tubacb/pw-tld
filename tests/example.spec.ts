@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 import { faker } from "@faker-js/faker/locale/ar";
 
 test("test to sign in with randomly generated username and password", async ({ page }) => {
-  await page.goto(process.env.APP_URL); //'https://fe-delivery.tallinn-learning.ee/signin'
+  await page.goto(process.env.APP_URL);
   await page.getByTestId("username-input").fill(faker.internet.username());
   await page.getByTestId("password-input").fill(faker.internet.password());
   await page.getByTestId("signIn-button").click();
